@@ -29,6 +29,10 @@
 <!-- Sidebar ================================================== -->
 	<?php include('sidebar.php') ?>
 <!-- Sidebar end=============================================== -->
+<!-- Chat=============================================== -->
+
+<?php include('chat.php') ?>
+<!-- Chat end=============================================== -->
 	<div class="span9">
     <ul class="breadcrumb">
 		<li><a href="index.html">Home</a> <span class="divider">/</span></li>
