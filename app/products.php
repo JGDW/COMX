@@ -27,7 +27,7 @@
 	<div class="container">
 	<div class="row">
 <!-- Sidebar ================================================== -->
-	
+	<?php include('sidebar.php') ?>
 <!-- Sidebar end=============================================== -->
 	<div class="span9">
     <ul class="breadcrumb">
