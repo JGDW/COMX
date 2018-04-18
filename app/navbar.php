@@ -52,7 +52,7 @@
                 <option>SPORTS & LEISURE </option>
                 <option>BOOKS & ENTERTAINMENTS </option>
             </select>
-            <input id="srchFld" class="srchTxt" type="text"  style="width: 420px;"/>
+            <input id="srchFld" class="srchTxt" type="text"  style="width: 420px; height: auto;"/>
             <button type="submit" id="submitButton" class="btn" style="margin-left: -5px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; height: 28px;">Go</button>
         </form>
 
