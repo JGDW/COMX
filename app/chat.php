@@ -15,6 +15,8 @@
         background-color: #afafaf;
         color: #ecf0f1;
         transition: background-color .3s;
+        border-radius: 15px;
+        margin: 1px;
     }
 
     .button-close {
@@ -29,6 +31,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        border-radius: 2px;
     }
 
     #reveal-chat {
@@ -287,44 +290,47 @@
     }
 
 </style>
-
-<div class = 'chatbox-temp bottom-right'>
-    <div id = "reveal-chat" class='chatbox__header bottom-right' >
-        <div class='title'>
-          Speak to a Friendly Technician
-        </div>
-        <div class = "chatbox__control">
-            <button class=' button-chat button-open'>^</button>
-        </div>
-  </div>
-</div>
-
-<div class='chatbox bottom-right'>
-  <div class='chatbox__header' >
-    <div class='title'>
-      Friendly Technician
+<div class = 'chat-container'>
+  <div class = 'chatbox-temp bottom-right show'>
+      <div id = "reveal-chat" class='chatbox__header bottom-right' >
+          <div class='title'>
+            Speak to a Friendly Technician
+          </div>
+          <div class = "chatbox__control">
+              <button class=' button-chat button-open' style = 'display:inline'>^</button>
+              <button class='button-chat button-close' style = 'display:inline'>&times;</button>
+          </div>
     </div>
-
-    <div class = "chatbox__control">
-        <button class='button-chat button-close'"'>&times;</button>
-    </div>
-
   </div>
-  <div class='chatbox__body'>
-    <div class='message receive'>
-      <img src='assets/images/emojis/smile2.jpg'>
-      <div class='message_text'>
-        Hello there, need assistance?
+
+  <div class='chatbox bottom-right hide'>
+    <div class='chatbox__header' >
+      <div class='title'>
+        Friendly Technician
+      </div>
+
+      <div class = "chatbox__control">
+          <button class='button-chat button-close' style = 'display:inline'>&times;</button>
+          <button class='button-chat button-minimize' style = 'display:inline'>_</button>
+      </div>
+
+    </div>
+    <div class='chatbox__body'>
+      <div class='message receive'>
+        <img src='assets/images/emojis/smile2.jpg'>
+        <div class='message_text'>
+          Hello there, need assistance?
+        </div>
       </div>
     </div>
-  </div>
-  <div class='chatbox__input'>
-    <input id='chat_input' placeholder='Type something here'>
-    <button onclick="send()">
-      <svg height='24' viewbox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
-        <path d='M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'></path>
-      </svg>
-    </button>
+    <div class='chatbox__input'>
+      <input id='chat_input' placeholder='Type something here'>
+      <button onclick="send()">
+        <svg height='24' viewbox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
+          <path d='M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'></path>
+        </svg>
+      </button>
+    </div>
   </div>
 </div>
 
@@ -333,7 +339,8 @@
     var body = document.querySelector('.chatbox__body')
     var input = document.querySelector('#chat_input');
     var chatControl = document.querySelector('#chat_input');
-    var close = document.querySelector('.button-close');
+    var close = document.querySelectorAll('.button-close');
+    var minimize = document.querySelector('.button-minimize');
     var open = document.querySelector('.button-open');
     var chatbox = document.querySelector('.chatbox');
     var revealer = document.querySelector('#reveal-chat');
@@ -348,33 +355,46 @@
         element.style.zIndex = 9;
     }
 
+    // re-expand chat window
     open.addEventListener('click', function(e){
         var className = chatbox.className;
         var replaced = className.replace(/hide/g, "");
         replaced = replaced.replace(/show/g, "");
         className = replaced + " show";
         chatbox.className = className;
-        console.log(className);
-        revealer.style.zIndex = 2;
         [].forEach.call(document.querySelectorAll('.show'), function (el) {
             show(el);
         });
     },false);
 
-    close.addEventListener('click', function(e){
+    // minimize chat window 
+    minimize.addEventListener('click', function(e){
         var className = chatbox.className;
         var replaced = className.replace(/hide/g, "");
         replaced = replaced.replace(/show/g, "");
         className = replaced + ' hide';
         chatbox.className = className;
-        console.log(className);
-        revealer.style.zIndex = 9;
-        console.log(revealer.style);
         [].forEach.call(document.querySelectorAll('.hide'), function (el) {
             hide(el);
         });
     },false);
 
+    for (var i = close.length - 1; i >= 0; i--) {
+        close[i].addEventListener('click', function(e){
+            var className = chatbox.className;
+            var replaced = className.replace(/hide/g, "");
+            replaced = replaced.replace(/show/g, "");
+            className = replaced + ' hide';
+            chatbox.className = className;
+            className = revealer.className;
+            replaced = replaced.replace(/show/g, "");
+            className = replaced + ' hide';
+            revealer.className = className;
+            [].forEach.call(document.querySelectorAll('.hide'), function (el) {
+                hide(el);
+            });
+        },false);
+    }
 
     var senderPictureSrc = "assets/images/noProfile.png";
     var replyPicture = "assets/images/emojis/smile2.jpg"
@@ -434,4 +454,16 @@
         messageController.sendMessage();
         setTimeout(messageController.starkReply, 1000);
     }
+
+    // self executing function here
+    (function() {
+       // your page initialization code here
+       // the DOM will be available here
+        [].forEach.call(document.querySelectorAll('.hide'), function (el) {
+            hide(el);
+        });
+        [].forEach.call(document.querySelectorAll('.show'), function (el) {
+            show(el);
+        });
+    })();
 </script>

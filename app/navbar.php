@@ -62,12 +62,9 @@
             <li class=""><a href="contact.html">Deals</a></li>
             <li class=""><a href="contact.html">Contact us</a></li>
 
-
         </ul>
 
-
     </div>
-
 
 </div>
 

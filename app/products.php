@@ -5,54 +5,44 @@
   </head>
 <body>
 <div id="header">
-<div class="container">
-<div id="welcomeLine" class="row">
-	<div class="span6">Welcome!<strong> User</strong></div>
-	<div class="span6">
-	<div class="pull-right">
-		<a href="product_summary.html"><span class="">Fr</span></a>
-		<a href="product_summary.html"><span class="">Es</span></a>
-		<span class="btn btn-mini">En</span>
-		<a href="product_summary.html"><span>&pound;</span></a>
-		<span class="btn btn-mini">R1550.00</span>
-		<a href="product_summary.html"><span class="">R</span></a>
-		<a href="product_summary.html"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i> [ 3 ] Itemes in your cart </span> </a> 
-	</div>
-	</div>
 </div>
+<div class="container">
 <!-- Navbar ================================================== -->
 <?php include('navbar.php'); ?>
 <!-- Header End====================================================================== -->
 <div id="mainBody">
 	<div class="container">
 	<div class="row">
-<!-- Sidebar ================================================== -->
-	<?php include('sidebar.php') ?>
-<!-- Sidebar end=============================================== -->
-<!-- Chat=============================================== -->
+	<!-- Filter bar ================================================== -->
+	<?php include('filterbar.php') ?>
+	<!-- Filter bar ================================================== -->
 
-<?php include('chat.php') ?>
-<!-- Chat end=============================================== -->
+	<!-- Sidebar ================================================== -->
+	<!-- Sidebar end=============================================== -->
+
+	<!-- Chat=============================================== -->
+	<?php include('chat.php') ?>
+	<!-- Chat end=============================================== -->
 	<div class="span9">
     <ul class="breadcrumb">
 		<li><a href="index.html">Home</a> <span class="divider">/</span></li>
 		<li class="active">Laptops</li>
     </ul>
-	<h3> Laptops <small class="pull-right"> 40 products are available </small></h3>	
+	<!-- <h3> Laptops <small class="pull-right"> 40 products are available </small></h3>	
 	<hr class="soft"/>
 	<p>
 		If you're looking for the best-priced laptop specials & deals that are packed with performance yet still light on your pocket then you have stumbled upon the right page. We know that finding your ideal laptop can be tricky. With so many different brands, features, models and uses for a laptop, finding the right laptop deals can be a time-consuming task.
 
 		We strive to offer the best laptop specials in South Africa, covering a vast variety of laptop deals from Intel Core i7 laptops to high-end gaming laptops. Scroll down and take a look at our current laptops for sale for the best laptop deals available from our whole range of laptop and notebook offerings.
-	</p>
+	</p> -->
 	<hr class="soft"/>
 	<form class="form-horizontal span6">
 		<div class="control-group">
 		  <label class="control-label alignL">Sort By </label>
 			<select>
-              <option>Priduct name A - Z</option>
-              <option>Priduct name Z - A</option>
-              <option>Priduct Stoke</option>
+              <option>Product name A - Z</option>
+              <option>Product name Z - A</option>
+              <option>Product Stock</option>
               <option>Price Lowest first</option>
             </select>
 		</div>
@@ -342,43 +332,7 @@
 </div>
 <!-- MainBody End ============================= -->
 <!-- Footer ================================================================== -->
-	<div  id="footerSection">
-	<div class="container">
-		<div class="row">
-			<div class="span3">
-				<h5>ACCOUNT</h5>
-				<a href="login.html">YOUR ACCOUNT</a>
-				<a href="login.html">PERSONAL INFORMATION</a> 
-				<a href="login.html">ADDRESSES</a> 
-				<a href="login.html">DISCOUNT</a>  
-				<a href="login.html">ORDER HISTORY</a>
-			 </div>
-			<div class="span3">
-				<h5>INFORMATION</h5>
-				<a href="contact.html">CONTACT</a>  
-				<a href="register.html">REGISTRATION</a>  
-				<a href="legal_notice.html">LEGAL NOTICE</a>  
-				<a href="tac.html">TERMS AND CONDITIONS</a> 
-				<a href="faq.html">FAQ</a>
-			 </div>
-			<div class="span3">
-				<h5>OUR OFFERS</h5>
-				<a href="#">NEW PRODUCTS</a> 
-				<a href="#">TOP SELLERS</a>  
-				<a href="special_offer.html">SPECIAL OFFERS</a>  
-				<a href="#">MANUFACTURERS</a> 
-				<a href="#">SUPPLIERS</a> 
-			 </div>
-			<div id="socialMedia" class="span3 pull-right">
-				<h5>SOCIAL MEDIA </h5>
-				<a href="#"><img width="60" height="60" src="themes/images/facebook.png" title="facebook" alt="facebook"/></a>
-				<a href="#"><img width="60" height="60" src="themes/images/twitter.png" title="twitter" alt="twitter"/></a>
-				<a href="#"><img width="60" height="60" src="themes/images/youtube.png" title="youtube" alt="youtube"/></a>
-			 </div> 
-		 </div>
-		<p class="pull-right">&copy; Bootshop</p>
-	</div><!-- Container End -->
-	</div>
+	<?php include('footer.php'); ?>
 <!-- Placed at the end of the document so the pages load faster ============================================= -->
 	<script src="themes/js/jquery.js" type="text/javascript"></script>
 	<script src="themes/js/bootstrap.min.js" type="text/javascript"></script>
@@ -442,5 +396,6 @@
 	</div>
 </div>
 <span id="themesBtn"></span>
+</div>
 </body>
 </html>
