@@ -4,9 +4,6 @@
     <?php include('header.php') ?>
   </head>
 <body>
-<div id="header">
-</div>
-<div class="container">
 <!-- Navbar ================================================== -->
 <?php include('navbar.php'); ?>
 <!-- Header End====================================================================== -->
