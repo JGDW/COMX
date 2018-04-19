@@ -41,10 +41,11 @@
     .chatbox__header-temp {
       width:  350px;
       height: 50px;
-      background: #ff9966;
+      background: #3A3F44;
+
       /* fallback for old browsers */
       /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #ff5e62, #ff9966);
+      background: linear-gradient(to left, #3A3F44, #3A3FA4);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       display: flex;
       align-items: center;
@@ -70,7 +71,7 @@
     }
 
     .chatbox {
-      background: #fafafa;
+      background: #3A3F44;
       min-height: 350px;
       width: 350px;
       box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.21), 0px 30px 20px -10px rgba(0, 0, 0, 0.2), 0px 60px 20px -30px rgba(0, 0, 0, 0.1);
@@ -84,10 +85,11 @@
     .chatbox__header {
       width: 100%;
       height: 50px;
-      background: #ff9966;
+      background: #3A3F44;
+
       /* fallback for old browsers */
       /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #ff5e62, #ff9966);
+      background: linear-gradient(to left, #3A3F44, #3A3F48);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       display: flex;
       align-items: center;
