@@ -125,8 +125,12 @@
 			  ?>
 			
 			  </div>
-			  <a class="left carousel-control" href="#featured" data-slide="prev">‹</a>
-			  <a class="right carousel-control" href="#featured" data-slide="next">›</a>
+			  <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+    			<span class="glyphicon glyphicon-chevron-left"  style="vertical-align:middle;font-size: 70%" aria-hidden="true"> < </span>
+    			</a>
+			  <a class="right carousel-control" href="#featured"role="button" data-slide="next">
+			 	 <span class="glyphicon glyphicon-chevron-right"  style="vertical-align:middle;font-size: 70%" aria-hidden="true"> > </span>
+			  </a>
 			  </div>
 			  </div>
 		</div>
