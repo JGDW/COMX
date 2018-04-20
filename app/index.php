@@ -107,7 +107,7 @@
 			      $print .= "<li class=\"span3\">";
 			      $print .= "<div class=\"thumbnail\"><i class=\"tag\"></i><a href=\"product_details.html\"><img src=\"".$directory.$image."\" alt=\"\"></a>";
 			      $print .= "<div class=\"caption\">";
-			      $print .= "<h5>Product name</h5>";
+			      $print .= "<h5>".substr( $image ,0 , strlen($image)-4 )."</h5>";
 			      $print .= "<h4><a class=\"btn\" href=\"product_details.html\">VIEW</a> <span class=\"pull-right\">$222.00</span></h4>";
 			      $print .= "</div>";
 			      $print .= "</div></li>";
