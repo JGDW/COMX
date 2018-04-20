@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
 	  <!-- WHAT -->
+	  
     <meta charset="utf-8">
     <title>Bootshop online Shopping cart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
