@@ -1,0 +1,36 @@
+{
+	"Lenovo V310": {
+		"CPU": {"value": "Core i5-7200U up to 3.10GHz CPU", "explanation": "..." },
+		"RAM": {"value": "4GB DDR4", "explanation": "..." },
+		"Hard drive": {"value": "500GB Hard Drive", "explanation": "..." },
+		"SSD": {"value": "512GB Ultra-Fast SSD", "explanation": "..." },
+		"Display Size": {"value": "15.6\"", "explanation": "..." },
+		"Display Desc": {"value": "Full HD 1920 x 1080 Anti-Glare Display", "explanation": "..." },
+		"Graphics": {"value": "Intel HD Graphics 620", "explanation": "..." },
+		"Wireless": {"value": "802.11 ac Wireless LAN", "explanation": "..." },
+		"Bluetooth": {"value": "4.0", "explanation": "..." },
+		"Camera/Webcam": {"value": "720p HD Camera", "explanation": "..." },
+		"Disc drive": {"value": "DVD Writer", "explanation": "..." },
+		"Operating System": {"value": "Windows 10 Professional (64bit)", "explanation": "..." },
+		"Disc drive": {"value": "DVD Writer", "explanation": "..." },
+		"Warranty": {"value": "1 Year Warranty ", "explanation": "..." },
+		"Extras": {"value": "FREE Notebook Carry Bag", "explanation": "..." }
+	},
+	"Lenovo Ideapad 320": {
+		"CPU": {"value": "Core i5-7200U up to 3.10GHz CPU", "explanation": "..." },
+		"RAM": {"value": "20GB DDR4", "explanation": "..." },
+		"Hard drive": {"value": "1TB Hard Drive ", "explanation": "..." },
+		"SSD": {"value": "None", "explanation": "..." },
+		"Display Size": {"value": "15.6\"", "explanation": "..." },
+		"Display Desc": {"value": "Full HD 1920 x 1080 Anti-Glare Display", "explanation": "..." },
+		"Graphics": {"value": "Intel HD Graphics 620", "explanation": "..." },
+		"Wireless": {"value": "802.11 ac Wireless LAN", "explanation": "..." },
+		"Bluetooth": {"value": "4.1", "explanation": "..." },
+		"Camera/Webcam": {"value": "720p HD Camera", "explanation": "..." },
+		"Disc drive": {"value": "DVD Writer", "explanation": "..." },
+		"Operating System": {"value": "Windows 10 Professional (64bit)", "explanation": "..." },
+		"Disc drive": {"value": "DVD Writer", "explanation": "..." },
+		"Warranty": {"value": "1 Year Warranty ", "explanation": "..." },
+		"Extras": {"value": "FREE Notebook Carry Bag", "explanation": "..." }
+	}
+}
