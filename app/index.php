@@ -35,6 +35,7 @@
   </head>
 <body>
 <?php include ('navbar.php');?>
+ 
 <!-- Header End====================================================================== -->
 <div id="carouselBlk">
 	<div id="myCarousel" class="carousel slide">
@@ -80,6 +81,7 @@
 <!-- Sidebar ================================================== -->
 	<?php include('sidebar.php'); ?>
 <!-- Sidebar end=============================================== -->
+
 		<div class="span9">		
 			<div class="well well-small"style="max-height: 322px">
 			<h4>Featured Products <small class="pull-right">200+ featured products</small></h4>
