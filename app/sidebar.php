@@ -1,3 +1,9 @@
+<style>
+	#sidebar {
+		float: right;
+	}
+</style>
+
 <div id="sidebar" class="span3 main-sidebar">
 	<div class="well well-small"><a class =id="myCart" href="product_summary.html"><i class = "icon-shopping-cart icon-white"></i>3 Items in your cart  <span class="badge badge-warning pull-right">R1550.00</span></a></div>
 	<ul id="sideManu" class="nav nav-tabs nav-stacked">
