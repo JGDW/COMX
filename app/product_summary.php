@@ -8,9 +8,12 @@
         text-transform: bold;
     }
 </style>
-
+<div id="cartModal" class="modal fade" role="dialog"   style="padding:2%;top: 40%;width: 60%;left: 30%; visibility: hidden;"> 
+                        
+                <!-- Modal content-->
+<div class="modal-content">
 <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="hide('cartModal')">&times;</button>
     <div id = "cart-heading"> Your Shopping Cart [ <small>3 Item(s) </small>]</div> 
 </div>
 <div class="">
@@ -59,12 +62,12 @@
                 $count++;
              
             }
-            $string = "<tr><td colspan=\"5\" style=\"text-align:right\">Price</td>";
+            $string = "<tr><td colspan=\"6\" style=\"text-align:right\">Price</td>";
             $string .="<td class = 'total'>R".$totalCost."</td></tr><tr>";
-            $string .= "<td colspan=\"5\" style=\"text-align:right\">Total VAT(15%)    </td>";
+            $string .= "<td colspan=\"6\" style=\"text-align:right\">Total VAT(15%)    </td>";
             $vat = $totalCost*0.15;
             $string .="<td>R".$vat."</td>  </tr><tr>";
-            $string .="<td colspan=\"5\" style=\"text-align:right\"><strong>Total Price</strong></td>";
+            $string .="<td colspan=\"6\" style=\"text-align:right\"><strong>Total Price</strong></td>";
             $string .= "<td class=\"label label-important\" style=\"display:block\"> <strong>R".($totalCost)."</strong></td> </tr>";
             echo $string;
 
@@ -74,6 +77,8 @@
     
     <a href="login.html" class="btn btn-large btn-success pull-right">Proceed to Checkout <i class="icon-arrow-right"></i></a>
 </div>
+   </div>
+            </div>
 
 <script>
     function increase(id){
@@ -96,5 +101,16 @@
         if(value > 0) {
             document.getElementById(id).value = value;
         }
+    }
+    function hide(id){
+        console.log("Hide " +id);
+        var modal = document.getElementById(id);
+        modal.style.visibility= 'hidden';
+    }
+    function show(id){
+    	console.log("show " +id);
+        var modal = document.getElementById(id);
+        modal.style.visibility= 'visible';
+        
     }
 </script>

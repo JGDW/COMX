@@ -27,19 +27,13 @@
                </div>
            </div>
 
-            <a id="cart-btn" href="" data-toggle="modal"  data-target="#cartModal"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i>[ 3 ]</span> </a>
+            <a id="cart-btn" href="" data-toggle="modal" onclick="show('cartModal')"  data-target="#cartModal"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i>[ 3 ]</span> </a>
     
             <!-- Cart Modal -->
 
-            <div id="cartModal" class="modal fade" role="dialog" style="padding:2%;top: 40%;width: 60%;left: 30%;" >
-                        
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <?php include('product_summary.php'); ?>
-                </div>
-            </div>
             
-           
+                    <?php include('product_summary.php'); ?>
+   
         </div>
 </div>
 <div id="logoArea" class="navbar">

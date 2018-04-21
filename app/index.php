@@ -27,7 +27,7 @@
 			  $images = preg_grep('~\.(jpeg|jpg|JPG)$~', scandir($directory));
 			  $count = 1;
 			  $prices = array("Alienware 17 GTX 1070 Gaming Laptop.JPG"=>"R48,999","AMD Threadripper 1920X .jpg"=>"R12,599","ASUS GTX1080 .jpg"=>"R12 499,00",
-			  "ASUS x399 .JPG"=>"R9 767,00","Corsair AX1200i 1200W .jpg"=>"R5 199,00","Corsair AX1600i 1600W PSU.JPG"=>"R 7,099.00",
+			  "ASUS x399 .JPG"=>"R9 767,00","Corsair AX1200i 1200W .jpg"=>"R5 199,00","Corsair AX1600i 1600W.JPG"=>"R 7,099.00",
                 "Intel Core i9 7960X .jpg"=>"R24 599,00","MSI x299 Gaming M7               .JPG"=>"R6 899,00");
 			  foreach($images as $image)
 			  {
