@@ -49,6 +49,7 @@
 				</tr>
               </thead>
               <tbody>
+ 
               <?php 
                 $NumItems =3;
                 $Count =0;
@@ -63,10 +64,11 @@
                     $String = "<tr>";
                     $String .= "<td> <img width=\"60\" src=\"".$ITems[$Count][0]."\" alt=\"\"/></td>";
                     $String .= "<td>".$ITems[$Count][1]."<br/>".$ITems[$Count][2]."</td><td>";
-                    $String .= "<div class=\"input-append\"><input class=\"span1\" style=\"max-width:34px\" placeholder=\"1\" 
-                                id=\"appendedInputButtons".$Count."\" size=\"16\" type=\"text\"><button class=\"btn\" type=\"button\"><i class=\"icon-minus\">
-                                </i></button><button class=\"btn\" type=\"button\"><i class=\"icon-plus\"></i></button><button class=\"btn btn-danger\" 
-                                type=\"button\"><i class=\"icon-remove icon-white\"></i></button></div></td>";
+                    $String .= "<div class=\"input-append\"><input class=\"span1\"  type=\"number\" min=\"1\" style=\"max-width:34px\" value=\"1\" 
+                                id=\"appendedInputButtons".$Count."\" size=\"16\" type=\"text\">
+                                <button class=\"btn\" type=\"button\"><i class=\"icon-minus\" onclick=\"decrease('appendedInputButtons".$Count."')\"></i></button>
+                                <button class=\"btn\" type=\"button\"><i class=\"icon-plus\" onclick=\"increase('appendedInputButtons".$Count."')\"></i></button>
+                                <button class=\"btn btn-danger\"type=\"button\"><i class=\"icon-remove icon-white\"></i></button></div></td>";
                     $String .= "<td>R".$ITems[$Count][3]."</td>";
                     $String .= "<td>R".$ITems[$Count][4]."</td>";
                     $Cost = $ITems[$Count][3]-$ITems[$Count][4];
@@ -86,6 +88,23 @@
                 echo $String;
             
               ?>
+               <script>
+              	function increase(id){
+                  	console.log("Increasing "+ id);
+              	 var value = parseInt(document.getElementById(id).value);
+              		 value = isNaN(value) ? 0 : value;
+              		 value++;
+              		 document.getElementById(id).value = value;
+                }
+              	function decrease(id){
+              		console.log("Decreasing "+ id);
+                 	 var value = parseInt(document.getElementById(id).value);
+                 		 value = isNaN(value) ? 0 : value;
+                 		 value--;
+                 		 if(value>0)
+                 		 document.getElementById(id).value = value;
+                   }
+              </script>
 <!--                 <tr> -->
 <!--                   <td> <img width="60" src="themes/images/products/4.jpg" alt=""/></td> -->
 <!--                   <td>MASSA AST<br/>Color : black, Material : metal</td> -->
