@@ -1,3 +1,182 @@
+
+<div class = 'chat-container'>
+  <div class = 'chatbox-temp bottom-right show'>
+      <div id = "reveal-chat" class='chatbox__header bottom-right' >
+          <div class='title'>
+            Speak to a Friendly Technician
+          </div>
+          <div class = "chatbox__control">
+              <button class=' button-chat button-open' style = 'display:inline'>^</button>
+              <button class='button-chat button-close' style = 'display:inline'>&times;</button>
+          </div>
+    </div>
+  </div>
+
+  <div class='chatbox bottom-right hide'>
+    <div class='chatbox__header' >
+      <div class='title'>
+        Friendly Technician
+      </div>
+
+      <div class = "chatbox__control">
+          <button class='button-chat button-close' style = 'display:inline'>&times;</button>
+          <button class='button-chat button-minimize' style = 'display:inline'>_</button>
+      </div>
+
+    </div>
+    <div class='chatbox__body'>
+      <div class='message receive'>
+        <img src='assets/images/emojis/smile2.jpg'>
+        <div class='message_text'>
+          Hello there, need assistance?
+        </div>
+      </div>
+    </div>
+    <div class='chatbox__input'>
+      <input id='chat_input' placeholder='Type something here'>
+      <button onclick="send()">
+        <svg height='24' viewbox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
+          <path d='M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+    var send = document.querySelector('.chatbox__input svg');
+    var body = document.querySelector('.chatbox__body')
+    var input = document.querySelector('#chat_input');
+    var chatControl = document.querySelector('#chat_input');
+    var close = document.querySelectorAll('.button-close');
+    var minimize = document.querySelector('.button-minimize');
+    var open = document.querySelector('.button-open');
+    var chatbox = document.querySelector('.chatbox');
+    var revealer = document.querySelector('#reveal-chat');
+
+    function hide(element) {
+        element.style.opacity = 0;
+        element.style.zIndex = -1;
+    }
+
+    function show(element) {
+        element.style.opacity = 1;
+        element.style.zIndex = 9;
+    }
+
+    // re-expand chat window
+    open.addEventListener('click', function(e){
+        var className = chatbox.className;
+        var replaced = className.replace(/hide/g, "");
+        replaced = replaced.replace(/show/g, "");
+        className = replaced + " show";
+        chatbox.className = className;
+        [].forEach.call(document.querySelectorAll('.show'), function (el) {
+            show(el);
+        });
+    },false);
+
+    // minimize chat window 
+    minimize.addEventListener('click', function(e){
+        var className = chatbox.className;
+        var replaced = className.replace(/hide/g, "");
+        replaced = replaced.replace(/show/g, "");
+        className = replaced + ' hide';
+        chatbox.className = className;
+        [].forEach.call(document.querySelectorAll('.hide'), function (el) {
+            hide(el);
+        });
+    },false);
+
+    for (var i = close.length - 1; i >= 0; i--) {
+        close[i].addEventListener('click', function(e){
+            var className = chatbox.className;
+            var replaced = className.replace(/hide/g, "");
+            replaced = replaced.replace(/show/g, "");
+            className = replaced + ' hide';
+            chatbox.className = className;
+            className = revealer.className;
+            replaced = replaced.replace(/show/g, "");
+            className = replaced + ' hide';
+            revealer.className = className;
+            [].forEach.call(document.querySelectorAll('.hide'), function (el) {
+                hide(el);
+            });
+        },false);
+    }
+
+    var senderPictureSrc = "assets/images/noProfile.png";
+    var replyPicture = "assets/images/emojis/smile2.jpg"
+
+    var messageController = (function(){
+      
+      var starkQuotes = [
+        "I TOLD YOU. I DON’T WANT TO JOIN YOUR SUPER-SECRET BOY BAND.",
+        "I LOVED YOU IN A ‘A CHRISTMAS STORY’.",
+        "WELL, PERFORMANCE ISSUES, IT’S NOT UNCOMMON. ONE OUT OF FIVE…",
+        "I’M A HUGE FAN OF THE WAY YOU LOSE CONTROL AND TURN INTO AN ENORMOUS GREEN RAGE MONSTER.",
+        "HOW DO YOU GO TO THE BATHROOM IN THE SUIT?” [LONG PAUSE.] “JUST LIKE THAT.",
+        "DOTH MOTHER KNOW YOU WEARETH HER DRAPES.",
+        "SOMETIMES YOU GOTTA RUN BEFORE YOU CAN WALK.",
+        "HAVE YOU EVER TRIED SHAWARMA… I DON’T KNOW WHAT IT IS, BUT I WANNA TRY IT.",
+        "IF THERE’S ONE THING I’VE PROVEN IT’S THAT YOU CAN COUNT ON ME TO PLEASURE MYSELF.",
+        "WE HAVE A HULK.",
+        "GENIUS, BILLIONAIRE, PLAYBOY, PHILANTHROPIST.",
+        "I AM IRON MAN"
+      ];
+      
+      return {
+        sendMessage: function(){
+          var message_container = document.createElement("div");
+          var message = `<img src="`+ senderPictureSrc + `"/>
+          <div class="message_text"> ${input.value} </div>`;
+          message_container.className = "message sender";
+          message_container.innerHTML = message;      
+          body.insertBefore(message_container, body.firstChild);
+          input.value = "";
+        },
+        starkReply: function(){
+          var reply = starkQuotes[Math.floor(Math.random() * starkQuotes.length-1) + 1];
+          var message_container = document.createElement("div");
+          var message = `<img class = "chat-img" src="` + replyPicture + `"/>
+          <div class="message_text"> ${reply} </div>`;
+          message_container.className = "message receive";
+          message_container.innerHTML = message;      
+          body.insertBefore(message_container, body.firstChild);
+        }
+      }
+    })();
+
+    var init = (function(messageController){
+      ['click', 'keyup'].forEach(event => document.addEventListener(event, handler));
+      
+      function handler(e){
+        if(e.target == send  || e.keyCode == 13 ){
+            messageController.sendMessage();
+            setTimeout(messageController.starkReply, 1000);
+        }
+      }
+
+    })(messageController);
+
+    function send() {
+        messageController.sendMessage();
+        setTimeout(messageController.starkReply, 1000);
+    }
+
+    // self executing function here
+    (function() {
+       // your page initialization code here
+       // the DOM will be available here
+        [].forEach.call(document.querySelectorAll('.hide'), function (el) {
+            hide(el);
+        });
+        [].forEach.call(document.querySelectorAll('.show'), function (el) {
+            show(el);
+        });
+    })();
+</script>
+
 <style>
 
     .chatbox__control {
@@ -292,180 +471,3 @@
     }
 
 </style>
-<div class = 'chat-container'>
-  <div class = 'chatbox-temp bottom-right show'>
-      <div id = "reveal-chat" class='chatbox__header bottom-right' >
-          <div class='title'>
-            Speak to a Friendly Technician
-          </div>
-          <div class = "chatbox__control">
-              <button class=' button-chat button-open' style = 'display:inline'>^</button>
-              <button class='button-chat button-close' style = 'display:inline'>&times;</button>
-          </div>
-    </div>
-  </div>
-
-  <div class='chatbox bottom-right hide'>
-    <div class='chatbox__header' >
-      <div class='title'>
-        Friendly Technician
-      </div>
-
-      <div class = "chatbox__control">
-          <button class='button-chat button-close' style = 'display:inline'>&times;</button>
-          <button class='button-chat button-minimize' style = 'display:inline'>_</button>
-      </div>
-
-    </div>
-    <div class='chatbox__body'>
-      <div class='message receive'>
-        <img src='assets/images/emojis/smile2.jpg'>
-        <div class='message_text'>
-          Hello there, need assistance?
-        </div>
-      </div>
-    </div>
-    <div class='chatbox__input'>
-      <input id='chat_input' placeholder='Type something here'>
-      <button onclick="send()">
-        <svg height='24' viewbox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
-          <path d='M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'></path>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-<script>
-    var send = document.querySelector('.chatbox__input svg');
-    var body = document.querySelector('.chatbox__body')
-    var input = document.querySelector('#chat_input');
-    var chatControl = document.querySelector('#chat_input');
-    var close = document.querySelectorAll('.button-close');
-    var minimize = document.querySelector('.button-minimize');
-    var open = document.querySelector('.button-open');
-    var chatbox = document.querySelector('.chatbox');
-    var revealer = document.querySelector('#reveal-chat');
-
-    function hide(element) {
-        element.style.opacity = 0;
-        element.style.zIndex = -1;
-    }
-
-    function show(element) {
-        element.style.opacity = 1;
-        element.style.zIndex = 9;
-    }
-
-    // re-expand chat window
-    open.addEventListener('click', function(e){
-        var className = chatbox.className;
-        var replaced = className.replace(/hide/g, "");
-        replaced = replaced.replace(/show/g, "");
-        className = replaced + " show";
-        chatbox.className = className;
-        [].forEach.call(document.querySelectorAll('.show'), function (el) {
-            show(el);
-        });
-    },false);
-
-    // minimize chat window 
-    minimize.addEventListener('click', function(e){
-        var className = chatbox.className;
-        var replaced = className.replace(/hide/g, "");
-        replaced = replaced.replace(/show/g, "");
-        className = replaced + ' hide';
-        chatbox.className = className;
-        [].forEach.call(document.querySelectorAll('.hide'), function (el) {
-            hide(el);
-        });
-    },false);
-
-    for (var i = close.length - 1; i >= 0; i--) {
-        close[i].addEventListener('click', function(e){
-            var className = chatbox.className;
-            var replaced = className.replace(/hide/g, "");
-            replaced = replaced.replace(/show/g, "");
-            className = replaced + ' hide';
-            chatbox.className = className;
-            className = revealer.className;
-            replaced = replaced.replace(/show/g, "");
-            className = replaced + ' hide';
-            revealer.className = className;
-            [].forEach.call(document.querySelectorAll('.hide'), function (el) {
-                hide(el);
-            });
-        },false);
-    }
-
-    var senderPictureSrc = "assets/images/noProfile.png";
-    var replyPicture = "assets/images/emojis/smile2.jpg"
-
-    var messageController = (function(){
-      
-      var starkQuotes = [
-        "I TOLD YOU. I DON’T WANT TO JOIN YOUR SUPER-SECRET BOY BAND.",
-        "I LOVED YOU IN A ‘A CHRISTMAS STORY’.",
-        "WELL, PERFORMANCE ISSUES, IT’S NOT UNCOMMON. ONE OUT OF FIVE…",
-        "I’M A HUGE FAN OF THE WAY YOU LOSE CONTROL AND TURN INTO AN ENORMOUS GREEN RAGE MONSTER.",
-        "HOW DO YOU GO TO THE BATHROOM IN THE SUIT?” [LONG PAUSE.] “JUST LIKE THAT.",
-        "DOTH MOTHER KNOW YOU WEARETH HER DRAPES.",
-        "SOMETIMES YOU GOTTA RUN BEFORE YOU CAN WALK.",
-        "HAVE YOU EVER TRIED SHAWARMA… I DON’T KNOW WHAT IT IS, BUT I WANNA TRY IT.",
-        "IF THERE’S ONE THING I’VE PROVEN IT’S THAT YOU CAN COUNT ON ME TO PLEASURE MYSELF.",
-        "WE HAVE A HULK.",
-        "GENIUS, BILLIONAIRE, PLAYBOY, PHILANTHROPIST.",
-        "I AM IRON MAN"
-      ];
-      
-      return {
-        sendMessage: function(){
-          var message_container = document.createElement("div");
-          var message = `<img src="`+ senderPictureSrc + `"/>
-          <div class="message_text"> ${input.value} </div>`;
-          message_container.className = "message sender";
-          message_container.innerHTML = message;      
-          body.insertBefore(message_container, body.firstChild);
-          input.value = "";
-        },
-        starkReply: function(){
-          var reply = starkQuotes[Math.floor(Math.random() * starkQuotes.length-1) + 1];
-          var message_container = document.createElement("div");
-          var message = `<img class = "chat-img" src="` + replyPicture + `"/>
-          <div class="message_text"> ${reply} </div>`;
-          message_container.className = "message receive";
-          message_container.innerHTML = message;      
-          body.insertBefore(message_container, body.firstChild);
-        }
-      }
-    })();
-
-    var init = (function(messageController){
-      ['click', 'keyup'].forEach(event => document.addEventListener(event, handler));
-      
-      function handler(e){
-        if(e.target == send  || e.keyCode == 13 ){
-            messageController.sendMessage();
-            setTimeout(messageController.starkReply, 1000);
-        }
-      }
-
-    })(messageController);
-
-    function send() {
-        messageController.sendMessage();
-        setTimeout(messageController.starkReply, 1000);
-    }
-
-    // self executing function here
-    (function() {
-       // your page initialization code here
-       // the DOM will be available here
-        [].forEach.call(document.querySelectorAll('.hide'), function (el) {
-            hide(el);
-        });
-        [].forEach.call(document.querySelectorAll('.show'), function (el) {
-            show(el);
-        });
-    })();
-</script>

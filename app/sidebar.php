@@ -1,6 +1,6 @@
 <style>
 	#sidebar {
-		float: right;
+		
 	}
 </style>
 
