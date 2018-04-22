@@ -43,6 +43,23 @@
             content: "\2605";
             position: absolute;
         }
+        .rating-no-hover {
+            float: left;
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+        .rating-no-hover > span {
+            display: inline-block;
+            position: relative;
+            width: 1.1em;
+            color: #CCCC00;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        }
+
         .rating {
             float: left;
             unicode-bidi: bidi-override;
@@ -74,6 +91,20 @@
             color: white;
             border: 1px solid #CCC;
             margin: 2px 10px;
+        }
+
+        .reviewer {    
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .date {
+            font-size: 14px;
+        }
+        .review-comment {
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 5px;
         }
     </style>
   </head>
@@ -297,16 +328,41 @@
                 </div>
 
                 <div id="reviews" class="tabcontent">
-                    <h5>Electric powered Fujinon 18x zoom lens</h5>
+                    <div class = "review-comment">
+                        <div class = 'reviewer'>
+                            <span class = 'review-person'> Joseph  </span>
+                            <span class = 'date'>( Wednesday, 06 December 2017 )</span>
+                        </div>
+                        <br>
+                        <div>
+                            <div class="rating-no-hover" style="font-size: 25px">
+                                <span>☆</span><span>☆</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                        </div>
 
-                    <p>
-
-                    </p>
-                    <h5>Impressive panoramas</h5>
-                    <p></p>
-
-                    <h5>Sharp, clear shots</h5>
-                    <p></p>
+                        <br>
+                        <br>
+                        <p>
+                            Do yourself a favor: Disconnect the smart device, plug everything into the motherboard, and do it yourself. It’s a frustrating, buggy, dysfunctional mess, and should have never been included with the case. The smart device casts a gloomy shadow over an otherwise market-dominating design. NZXT’s designers did well to build a case which brilliantly manages cables, integrates detail-oriented features, and fits together flushly. The rear panel eject button is a small, mechanically rewarding feature that further reinforces this point. The case cools reasonably; it’s not the best, obviously, but it also doesn’t claim to offer “high airflow,” and its panel build quality far-and-away exceeds the recently launched H500P. While beating it, if marginally. Removing the front panel only improves thermals ~6C, which means that NZXT is operating near its maximum cooling potential for the stock fan configuration -- the panel is well-designed and breathes reasonably, considering how the case is marketed.
+                        </p>
+                    </div>
+                    <div class = "review-comment">
+                        <div class = 'reviewer'> 
+                            <span class = 'review-person'> DMehaffy  </span>
+                            <span class = 'date'>( Thursday, 16 November 2017 )</span>
+                        </div>
+                        <br>
+                        <div>
+                            <div class="rating-no-hover" style="font-size: 25px">
+                                <span>☆</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <p>
+                            This is my first PC case ever! I am quite happy with it. I do not really know better... So maybe I should not have left a comment... xD
+                        </p>
+                    </div>
                 </div>
                 
                 </p>
