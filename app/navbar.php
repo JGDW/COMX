@@ -1,3 +1,9 @@
+<style>
+  #searcher {
+    background: url(themes/images/search.png) no-repeat 390px center #fff;
+  }
+</style>
+
 <div id="welcomeLine" class=" row" style="background-color: #3A3F44; background-image: linear-gradient(#52575C, #3A3F44 70%, #3A3F44);">
         <div class="pull-right">
            <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-mini btn-primary">Login</span></a>
@@ -44,7 +50,6 @@
         <span class="icon-bar"></span>
     </a>
 
-
     <div class="navbar-inner" style="border-radius: 0; background-color: #3A3F44;background-image: linear-gradient(#52575C, #3A3F44 70%, #3A3F44);">
 
         <a class="brand" href="index.html"><img src="themes/images/logo.png" alt="Bootsshop"/></a>
@@ -52,13 +57,25 @@
         <form class="form-inline navbar-search" method="post" action="products.html"  style="margin-left: 2rem;">
             <select class="srchTxt" style=" margin-right: -6px; width: auto;">
                 <option>All</option>
-                <option>CLOTHES </option>
-                <option>FOOD AND BEVERAGES </option>
-                <option>HEALTH & BEAUTY </option>
-                <option>SPORTS & LEISURE </option>
-                <option>BOOKS & ENTERTAINMENTS </option>
+                <option>GRAPHICS CARDS </option>
+                <option>MOTHER BOARDS </option>
+                <option>RAM </option>
+                <option>DESKTOPS </option>
+                <option>LAPTOPS </option>
+                <option>MISCELLANEOUS </option>
+                <option>CPUs </option>
             </select>
-            <input id="srchFld" class="srchTxt" type="text"  style="width: 420px; height: auto;"/>
+            <input id="searcher" class="srchTxt" type="text" style="width: 420px; height: auto;" list="items"/>
+              <datalist id="items">
+                <option value="Asus Laptops">
+                <option value="Lenovo Laptops">
+                <option value="MSI Laptops">
+                <option value="Intel CPU">
+                <option value="Ryzen CPU">
+                <option value="DELL TV">
+                <option value="Graphics Cards">
+              </datalist>
+
             <button type="submit" id="submitButton" class="btn" style="margin-left: -5px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; height: 28px;">Go</button>
         </form>
 

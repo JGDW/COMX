@@ -48,7 +48,6 @@
 			  children[11].childNodes[1].innerHTML=this.value; "/>
 
 			  <input id="slider-upper-bound" type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
-			  console.log(this.parentNode.childNodes[5]);
 			  this.value=Math.max(this.value,this.parentNode.childNodes[5].value-(-1));
 			  var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
 			  var children = this.parentNode.childNodes[1].childNodes;
@@ -271,5 +270,10 @@
 
 	[slider]:hover > div > [sign] {
 	  opacity: 1;
+	}
+
+	input[type="radio"], input[type="checkbox"] {
+	    width: auto;
+	    margin:  5px;
 	}
 </style>

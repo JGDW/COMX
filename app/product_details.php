@@ -59,6 +59,9 @@
                 -1px 1px 0 #000,
                 1px 1px 0 #000;
         }
+        .bigger-stars {
+            font-size: 25px;
+        }
 
         .rating {
             float: left;
@@ -69,6 +72,12 @@
             display: inline-block;
             position: relative;
             width: 1.1em;
+            color: #CCCC00;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
         }
         .rating > span:hover:before,
         .rating > span:hover ~ span:before {
@@ -186,8 +195,8 @@
                 <h4>NZXT H700i Gaming Case - Black/Red / Water-Cooling
                     Installation Simplified / Adaptive Noise Reduction /
                     Easy Storage Installation / Max GPU Clearance Up to 413mm</h4>
-                <div class="rating">
-                    <span>☆</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <div class="rating bigger-stars">
+                    <span>☆</span><span>☆</span><span>★</span><span>★</span><span>★</span>
                 </div>
                 <i style="float: none"></i>
                 <hr class="soft"/>
@@ -692,6 +701,4 @@
     </div>
     </div>
 </div>
-<span id="themesBtn"></span>
-</body>
 </html>
