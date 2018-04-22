@@ -51,11 +51,6 @@
             position: relative;
             width: 1.1em;
         }
-        .rating > span:hover:before,
-        .rating > span:hover ~ span:before {
-            content: "\2605";
-            position: absolute;
-        }
     </style>
 </head>
 <body>
@@ -78,22 +73,26 @@
                 <div id = "brand-filter" >
                     <label class = "filter-heading" for = "brand_type">Rating</label>
 
-                    <input checked="checked" type="checkbox" name="brand_type" value="msi">All<br>
-                    <div class="rating">
-                        <input type="checkbox" name="brand_type" value="asus"> <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                    </div>
-                    <div class="rating">
-                        <input type="checkbox" name="brand_type" value="asus"> <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
-                    </div>
-                    <div class="rating">
-                        <input type="checkbox" name="brand_type" value="asus"> <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="rating">
-                        <input type="checkbox" name="brand_type" value="asus"> <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="rating">
-                        <input type="checkbox" name="brand_type" value="asus"> <span>★</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
+                    <input checked="checked" type="checkbox" name="brand_type" value="msi">All
+                    <br/>
+                    <br/>
+                    <select>
+                        <option class="rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </option>
+                        <option class="rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                        </option>
+                        <option class="rating">
+                            <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+                        </option>
+                        <option class="rating">
+                            <span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span>
+                        </option>
+                        <option class="rating">
+                            <span>★</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                        </option>
+                    </select>
                 </div>
                 <hr class="soft"/>
 
