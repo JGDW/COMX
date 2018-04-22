@@ -169,7 +169,7 @@
 
                 <!--CORES-->
                 <div id = "brand-filter" >
-                    <label class = "filter-heading" for = "price">Price</label>
+                    <label class = "filter-heading" for = "price">CORES</label>
                     <!-- <button class = "btn" onclick="setMinOnSlider()">Min</button>
                     <button class = "btn" onclick="setMaxOnSlider()">Max</button> -->
                     <!-- https://codepen.io/Manitoba/pen/ZWRjye -->
@@ -210,7 +210,7 @@
 
                 <!--SPEED-->
                 <div id = "brand-filter" >
-                    <label class = "filter-heading" for = "price">Price</label>
+                    <label class = "filter-heading" for = "price">SPEED</label>
                     <!-- <button class = "btn" onclick="setMinOnSlider()">Min</button>
                     <button class = "btn" onclick="setMaxOnSlider()">Max</button> -->
                     <!-- https://codepen.io/Manitoba/pen/ZWRjye -->
@@ -251,7 +251,7 @@
 
                 <!--TDP-->
                 <div id = "brand-filter" >
-                    <label class = "filter-heading" for = "price">Price</label>
+                    <label class = "filter-heading" for = "price">TDP</label>
                     <!-- <button class = "btn" onclick="setMinOnSlider()">Min</button>
                     <button class = "btn" onclick="setMaxOnSlider()">Max</button> -->
                     <!-- https://codepen.io/Manitoba/pen/ZWRjye -->
