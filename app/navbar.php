@@ -52,7 +52,15 @@
 
     <div class="navbar-inner" style="border-radius: 0; background-color: #3A3F44;background-image: linear-gradient(#52575C, #3A3F44 70%, #3A3F44);">
 
-        <a class="brand" href="index.html"><img src="themes/images/logo.png" alt="Bootsshop"/></a>
+        <a class="" style="display: block;
+                height: 80px;
+                float: left;
+                padding: 10px 20px 10px;
+                margin-left: -20px;
+                font-size: 20px;
+                font-weight: 200;
+                color: #777;
+                text-shadow: 0 1px 0 #fff;" href="index.html"><img style="height: 90px" src="assets/images/logo/logo.jpg" alt="Bootsshop"/></a>
         <!--search bar-->
         <form class="form-inline navbar-search" method="post" action="products.html"  style="margin-left: 2rem;">
             <select class="srchTxt" style=" margin-right: -6px; width: auto;">
