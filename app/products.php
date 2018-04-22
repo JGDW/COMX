@@ -57,22 +57,21 @@
 	<div class="tab-pane" id="listView">
 		<div class="row">	  
 			<div class="span2">
-				<img src="./assets/images/laptops/asus-fx550jk-intel-gaming-laptop-deal-0005.jpg" alt=""/>
+				<a  href="product_details.html"><img src="./assets/images/laptops/asus-fx550jk-intel-gaming-laptop-deal-0005.jpg" alt="" /></a>
 			</div>
 			<div class="span4">
-				<h3>New | Available</h3>				
+				<h3>Available</h3>				
 				<hr class="soft"/>
-				<h5>Product Name </h5>
+				<h4>ASUS FX550JK</h4>
 				<p>
-				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-				that is why our goods are so popular..
+				It is powered by an Intel Core processor and an NVIDIA graphics card that deliver smooth, responsive performance. It integrates faster processors, more powerful graphics and an advanced memory controller, adequate for daily multi-task computing or multimedia entertainment. This setup can handle many applications at once without slowing down your PC.
 				</p>
 				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
 				<br class="clr"/>
 			</div>
 			<div class="span3 alignR">
 			<form class="form-horizontal qtyFrm">
-			<h3> R140.00</h3>
+			<h3> R 4,499</h3>
 			<label class="checkbox">
 				<input type="checkbox">  Adds product to compare
 			</label><br/>
@@ -86,12 +85,12 @@
 		<hr class="soft"/>
 		<div class="row">	  
 			<div class="span2">
-				<img src="./assets/images/laptops/asus-gl703ge-core-i7-gtx-1050-ti-gaming-laptop-deal-1000px-v1-0002.jpg" alt=""/>
+				<img src="./assets/images/laptops/lenovo-ideapad-320-core-i5-laptop-deal-1000px-v1-00071.jpg" alt=""/>
 			</div>
 			<div class="span4">
 				<h3>New | Available</h3>				
 				<hr class="soft"/>
-				<h5>Product Name </h5>
+				<h4>Lenovo Ideapad 320 </h4>
 				<p>
 				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
 				that is why our goods are so popular..
@@ -101,7 +100,7 @@
 			</div>
 			<div class="span3 alignR">
 			<form class="form-horizontal qtyFrm">
-				<h3> R140.00</h3>
+				<h3> R 6,039</h3>
 				<label class="checkbox">
 				<input type="checkbox">  Adds product to compare
 				</label><br/>
@@ -115,22 +114,21 @@
 		<hr class="soft"/>
 		<div class="row">	  
 			<div class="span2">
-				<img src="./assets/images/laptops/asus-vivobook-15-x542un-core-i7-laptop-deal-1000px-v1-0005.jpg" alt=""/>
+				<img src="./assets/images/laptops/lenovo-v310-core-i5-pro-laptop-deal-1000px-v1-0003.jpg" alt=""/>
 			</div>
 			<div class="span4">
 				<h3>New | Available</h3>				
 				<hr class="soft"/>
-				<h5>Product Name </h5>
+				<h4>Lenovo V310 </h4>
 				<p>
-				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-				that is why our goods are so popular..
+				The Lenovo V310 is designed to meet all of your business needs, including budget. It's very configurable and has a range of options, from state-of-the-art processing to a flexible dual storage system. Plus, with its optional battery feature, this portable laptop can keep going for up to 12 hours.
 				</p>
 				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
 				<br class="clr"/>
 			</div>
 			<div class="span3 alignR">
 			<form class="form-horizontal qtyFrm">
-				<h3> R140.00</h3>
+				<h3> R 6,349</h3>
 				<label class="checkbox">
 					<input type="checkbox">  Adds product to compare
 				</label><br/>
@@ -144,22 +142,21 @@
 		<hr class="soft"/>
 		<div class="row">	  
 			<div class="span2">
-				<img src="assets/images/laptops/msi-pl62-7rc-core-i7-laptop-deal-1000px-v1-0003" alt=""/>
+				<img src="./assets/images/laptops/msi-gl63-8rd-gtx-1050-ti-core-i5-gaming-laptop-deal-1000px-v1-00031.jpg" alt=""/>
 			</div>
 			<div class="span4">
-				<h3>New | Available</h3>				
+				<h3>Available</h3>				
 				<hr class="soft"/>
-				<h5>Product Name </h5>
+				<h4>MSI GL63 </h4>
 				<p>
-				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-				that is why our goods are so popular..
+				Built to be a powerful budget gaming laptop, this laptop will easily handle heavy workloads as well as entry level gaming.
 				</p>
 				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
 				<br class="clr"/>
 			</div>
 			<div class="span3 alignR">
 				<form class="form-horizontal qtyFrm">
-				<h3> R140.00</h3>
+				<h3> R 8,999</h3>
 				<label class="checkbox">
 				<input type="checkbox">  Adds product to compare
 				</label><br/>
@@ -174,22 +171,21 @@
 		<hr class="soft"/>
 		<div class="row">	  
 			<div class="span2">
-				<img src="assets/images/laptops/msi-gl63-8rd-gtx-1050-ti-core-i5-gaming-laptop-deal-1000px-v1-00031.jpg" alt=""/>
+				<img src="./assets/images/laptops/asus-gl703ge-core-i7-gtx-1050-ti-gaming-laptop-deal-1000px-v1-0002.jpg" alt=""/>
 			</div>
 			<div class="span4">
-				<h3>New | Available</h3>				
+				<h3 style="color: red">Not Available</h3>				
 				<hr class="soft"/>
-				<h5>Product Name </h5>
+				<h4>ASUS gl703ge </h4>
 				<p>
-				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-				that is why our goods are so popular..
+				The new ROG Strix Scar Edition is built for the next generation of gamers looking to take their game to the next level thanks to up to an 8th-Gen Intel Core i7 processor, GTX graphics, and a high refresh rate gaming display. The 8th-Generation Scar Edition brings several refinements to the series, including an AURA SYNC RGB keyboard and 12V fans with Anti-Dust Cooling for improved thermal performance.
 				</p>
 				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
 				<br class="clr"/>
 			</div>
 			<div class="span3 alignR">
 				<form class="form-horizontal qtyFrm">
-				<h3> R140.00</h3>
+				<h3> R 10,199</h3>
 				<label class="checkbox">
 				<input type="checkbox">  Adds product to compare
 				</label><br/>
@@ -201,22 +197,21 @@
 		<hr class="soft"/>
 		<div class="row">	  
 			<div class="span2">
-				<img src="assets/images/laptops/lenovo-ideapad-320-core-i5-laptop-deal-1000px-v1-00071.jpg" alt=""/>
+				<img src="./assets/images/laptops/msi-ge63-8rf-raider-core-i7-gtx-1070-gaming-laptop-deal-1000px-v1-0001.jpg" alt=""/>
 			</div>
 			<div class="span4">
 				<h3>New | Available</h3>				
 				<hr class="soft"/>
-				<h5>Product Name </h5>
+				<h4>MSI GE63 </h4>
 				<p>
-				Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies - 
-				that is why our goods are so popular..
+				A powerful high-end gaming laptop that is sure to handle any taks with ease. Sporting a 120hz screen and top end internal hardware it offers its users a prestine gaming experience.
 				</p>
 				<a class="btn btn-small pull-right" href="product_details.html">View Details</a>
 				<br class="clr"/>
 			</div>
 			<div class="span3 alignR">
 				<form class="form-horizontal qtyFrm">
-				<h3> R140.00</h3>
+				<h3> R 12,499</h3>
 				<label class="checkbox">
 				<input type="checkbox">  Adds product to compare
 				</label><br/>
@@ -233,80 +228,62 @@
 
 	<div class="tab-pane  active" id="blockView">
 		<ul class="thumbnails">
-			<li class="span3">
-			  <div class="thumbnail">
-				<a href="product_details.html"><img src="./assets/images/laptops/asus-fx550jk-intel-gaming-laptop-deal-0005.jpg" alt=""/></a>
-				<div class="caption">
-				  <h5>Manicure &amp; Pedicure</h5>
-				  <p> 
-					I'm a paragraph. Click here 
-				  </p>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R25000</a></h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span3">
-			  <div class="thumbnail">
-				<a href="product_details.html"><img src="./assets/images/laptops/asus-gl703ge-core-i7-gtx-1050-ti-gaming-laptop-deal-1000px-v1-0002.jpg" alt=""/></a>
-				<div class="caption">
-				  <h5>Manicure &amp; Pedicure</h5>
-				  <p> 
-					I'm a paragraph. Click here 
-				  </p>
-				   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R25000</a></h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span3">
-			  <div class="thumbnail">
-				<a href="product_details.html"><img src="./assets/images/laptops/asus-vivobook-15-x542un-core-i7-laptop-deal-1000px-v1-0005.jpg" alt=""/></a>
-				<div class="caption">
-				  <h5>Manicure &amp; Pedicure</h5>
-				  <p> 
-					I'm a paragraph. Click here 
-				  </p>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R25000</a></h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span3">
-			  <div class="thumbnail">
-				<a href="product_details.html"><img src="assets/images/laptops/msi-pl62-7rc-core-i7-laptop-deal-1000px-v1-0003" alt=""/></a>
-				<div class="caption">
-				  <h5>Manicure &amp; Pedicure</h5>
-				  <p> 
-					I'm a paragraph. Click here 
-				  </p>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R25000</a></h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span3">
-			  <div class="thumbnail">
-				<a href="product_details.html"><img src="assets/images/laptops/msi-gl63-8rd-gtx-1050-ti-core-i5-gaming-laptop-deal-1000px-v1-00031.jpg" alt=""/></a>
-				<div class="caption">
-				  <h5>Manicure &amp; Pedicure</h5>
-				  <p> 
-					I'm a paragraph. Click here 
-				  </p>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R25000</a></h4>
-				</div>
-			  </div>
-			</li>
-			<li class="span3">
-			  <div class="thumbnail">
-				<a href="product_details.html"><img src="assets/images/laptops/lenovo-ideapad-320-core-i5-laptop-deal-1000px-v1-00071.jpg" alt=""/></a>
-				<div class="caption">
-				  <h5>Manicure &amp; Pedicure</h5>
-				  <p> 
-					I'm a paragraph. Click here 
-				  </p>
-				    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R25000</a></h4>
-				</div>
-			  </div>
-			</li>
-		  </ul>
-	<hr class="soft"/>
+				<li class="span3">
+				  <div class="thumbnail"style="max-height:289px; max-width:260px">
+					<a  href="product_details.html"><img src="./assets/images/laptops/asus-fx550jk-intel-gaming-laptop-deal-0005.jpg" alt="" style="max-height: 90px"/></a>
+					<div class="caption">
+					  <h5>ASUS FX550JK</h5>
+					  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R 4,499</a></h4>
+					</div>
+				  </div>
+				</li>
+				<li class="span3">
+				  <div class="thumbnail"style="max-height:289px; max-width:260px">
+					<a  href="product_details.html"><img src="./assets/images/laptops/lenovo-ideapad-320-core-i5-laptop-deal-1000px-v1-00071.jpg" alt="" style="max-width: 160px"/></a>
+					<div class="caption">
+					  <h5>Raza Naga Epic Wireless</h5>
+					 <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R 6,039</a></h4>
+					</div>
+				  </div>
+				</li>
+				<li class="span3">
+				  <div class="thumbnail"style="max-height:289px; max-width:260px">
+					<a  href="product_details.html"><img src="./assets/images/laptops/lenovo-v310-core-i5-pro-laptop-deal-1000px-v1-0003.jpg" alt=""style="max-width: 160px; max-height:160px"/></a>
+					<div class="caption">
+					  <h5>Corsair H150i Pro</h5>
+					   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R 6,349</a></h4>
+					</div>
+				  </div>
+				</li>
+				<li class="span3">
+				  <div class="thumbnail" style="max-height:289px; max-width:260px">
+					<a  href="product_details.html"><img src="./assets/images/laptops/msi-gl63-8rd-gtx-1050-ti-core-i5-gaming-laptop-deal-1000px-v1-00031.jpg" alt=""style="max-width: 160px"/></a>
+					<div class="caption">
+					  <h5>Dell P3418HW 34inch</h5>
+					  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R 8,999</a></h4>
+					</div>
+				  </div>
+				</li>
+				<li class="span3">
+				  <div class="thumbnail"style="max-height:289px; max-width:260px">
+					<a  href="product_details.html"><img src="./assets/images/laptops/asus-gl703ge-core-i7-gtx-1050-ti-gaming-laptop-deal-1000px-v1-0002.jpg" alt=""style="max-width: 160px"/></a>
+					<div class="caption">
+					  <h5>Vertagear SL5000 Black/White</h5>
+					  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R 10,199</a></h4>
+					</div>
+				  </div>
+				</li>
+				<li class="span3">
+				  <div class="thumbnail"style="max-height:289px; max-width:260px">
+					<a  href="product_details.html"><img src="./assets/images/laptops/msi-ge63-8rf-raider-core-i7-gtx-1070-gaming-laptop-deal-1000px-v1-0001.jpg" alt=""style="max-width: 160px"/></a>
+					<div class="caption">
+					  <h5>ASUS PG348Q ROG Swift</h5>
+					   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">R 12,499</a></h4>
+					</div>
+				  </div>
+				</li>
+			  </ul>	
+	
 	</div>
 </div>
 

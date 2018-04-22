@@ -16,6 +16,7 @@
 			</ul>
 		</li>
 		<li class="subMenu"><a> Desktops </a></li>
+		<li class="subMenu"><a> Laptops </a></li>
 	</ul>
 
 	<br/>
