@@ -90,6 +90,7 @@
         <ul id="topMenu" class="nav pull-right" >
             <li class=""><a href="special_offer.html">Home</a></li>
             <li class=""><a href="normal.html">Departments</a></li>
+            v <li class=""><a href="normal.html">Build PC</a></li>
             <li class=""><a href="contact.html">Deals</a></li>
             <li class=""><a href="contact.html">Contact us</a></li>
 
